@@ -2,7 +2,8 @@ const Testimonial = require('../models/Testimoniales');
 
 exports.mostrarTestimoniales = async (req, res) => {
     const testimoniales = await Testimonial.findAll({
-        order: [['id', 'DESC']]
+        order: [['id', 'DESC']],
+        limit: 12
     })
 
     res.render('testimoniales', {
@@ -31,7 +32,10 @@ exports.agregarTestimonial = async (req, res) => {
     //Revisar si hay errores
     if(errores.length > 0){
         //Mostrar la vista con errores
-        const testimoniales = await Testimonial.findAll()
+        const testimoniales = await Testimonial.findAll({
+            order: [['id', 'DESC']],
+            limit: 12
+        })
         res.render('testimoniales', {
             pagina: 'Testimoniales',
             errores, //De aca pasa al template de testimoniales
