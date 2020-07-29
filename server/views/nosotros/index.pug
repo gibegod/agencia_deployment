@@ -1,0 +1,27 @@
+extends ../layout/index
+
+block contenido
+    main.container.mt-5
+        .row
+            .col-md-5
+                img.img-fluid(src="img/nosotros.jpg", alt="Imagen de nosostros")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Nam sed risus congue, lacinia nisi at, sollicitudin nibh. Vestibulum semper est tempus, vehicula massa sed, aliquam sapien. In fringilla ultricies faucibus. Donec elementum eros vestibulum dapibus pharetra. Cras aliquam sagittis velit, id cursus mi mollis vel. Curabitur a efficitur metus.
+                p Fusce convallis est sit amet mauris varius, a malesuada orci consequat. Suspendisse lacus tellus, tempor et ex ultrices, viverra tristique lorem. Aenean finibus commodo nunc, in volutpat leo aliquam ac.
+                p Cras hendrerit faucibus mi, sed feugiat odio dapibus sed. Duis vitae cursus massa. Sed dignissim consectetur turpis, sit amet aliquet massa. Integer arcu lacus, mollis et accumsan eu, pharetra sit amet mauris. Morbi purus dui, vestibulum id vehicula quis, dapibus vel ligula. Cras viverra augue eget dapibus commodo. Suspendisse potenti. Morbi interdum velit turpis, a sollicitudin arcu porta nec. Sed eget luctus mi.
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+                .col-md-4
+                    img(src="img/icono_seguridad.svg", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad
+                    p Suspendisse lacus tellus, tempor et ex ultrices, viverra tristique lorem. Aenean finibus commodo nunc, in volutpat leo aliquam ac.
+                .col-md-4
+                    img(src="img/icono_destinos.svg", class="img-fluid mb-4")
+                    h2.mb-4 Destinos
+                    p Suspendisse lacus tellus, tempor et ex ultrices, viverra tristique lorem. Aenean finibus commodo nunc, in volutpat leo aliquam ac.
+                .col-md-4
+                    img(src="img/icono_precios.svg", class="img-fluid mb-4")
+                    h2.mb-4 Precios
+                    p Suspendisse lacus tellus, tempor et ex ultrices, viverra tristique lorem. Aenean finibus commodo nunc, in volutpat leo aliquam ac.
